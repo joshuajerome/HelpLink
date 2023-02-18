@@ -20,7 +20,7 @@ struct CustomTabBar: View {
             
             // Tab Bar Buttons...
             
-            TabBarButton(image: "bookmark", selectedTab: $selectedTab, tabPoints: $tabPoints)
+            TabBarButton(image: "list.clipboard", selectedTab: $selectedTab, tabPoints: $tabPoints)
             
             TabBarButton(image: "house", selectedTab: $selectedTab, tabPoints: $tabPoints)
             
@@ -50,7 +50,7 @@ struct CustomTabBar: View {
             return 10
         } else {
             switch selectedTab {
-            case "bookmark":
+            case "list.clipboard":
                 return tabPoints[0]
             case "house":
                 return tabPoints[1]

@@ -14,7 +14,13 @@ struct Home: View {
         
         ZStack(alignment: .bottom, content: {
             
-            Color("TabBG").ignoresSafeArea()
+            if selectedTab == "house" {
+                Main()
+            } else if selectedTab == "person" {
+                Profile()
+            } else {
+                Diagnosis()
+            }
             
             CustomTabBar(selectedTab: $selectedTab)
         })
