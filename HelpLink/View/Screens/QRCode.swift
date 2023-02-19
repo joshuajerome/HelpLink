@@ -27,7 +27,6 @@ struct QRCode: View {
                     .cornerRadius(12)
             })
         }
-        
     }
     
     func generateQRCodeImage(url : String) -> UIImage {
@@ -45,6 +44,6 @@ struct QRCode: View {
 
 struct QRCode_Previews: PreviewProvider {
     static var previews: some View {
-        QRCode(url: "www.google.com")
+        QRCode(url: "https://celebrated-pie-cbe7d3.netlify.app")
     }
 }
