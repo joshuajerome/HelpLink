@@ -22,20 +22,24 @@ struct Firebase_Auth: View {
     
     var content: some View {
         ZStack {
-            Color("TabBG")
+            Color("MediumDark")
             
             RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .foregroundStyle(.linearGradient(colors: [.pink, .blue], startPoint:
+                .foregroundStyle(.linearGradient(colors: [.pink, .indigo], startPoint:
                         .topLeading, endPoint: .bottomTrailing))
                 .frame(width: 1000, height: 400)
                 .rotationEffect(.degrees(135))
                 .offset(y: -350)
             
             VStack(spacing: 20) {
-                Text("Welcome")
+                Text("Welcome to")
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .bold, design: .rounded))
-                    .offset(x: -90, y: -100)
+                    .offset(x: -65, y: -100)
+                Text("HelpLink")
+                    .foregroundColor(.white)
+                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                    .offset(x: -90, y: -110)
                 
                 TextField("Email", text: $email)
                     .foregroundColor(.white)
@@ -72,7 +76,7 @@ struct Firebase_Auth: View {
                         .frame(width: 200, height: 40)
                         .background(
                             RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                .fill(.linearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+                                .fill(.linearGradient(colors: [.purple, .indigo], startPoint: .topLeading, endPoint: .bottomTrailing)
                                       )
                         )
                         .foregroundColor(.white)
