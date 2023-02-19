@@ -15,10 +15,12 @@ struct CustomTabBar: View {
     
     var body: some View {
         
-        RoundedRectangle(cornerRadius: 30, style: .circular)
-            .frame(width: UIScreen.main.bounds.size.width, height: 100, alignment: .bottom)
-            .foregroundColor(Color("TabBG"))
-            .blur(radius: 30, opaque: false)
+//        RoundedRectangle(cornerRadius: 30, style: .circular)
+//            .frame(width: UIScreen.main.bounds.size.width, height: 100, alignment: .bottom)
+//            .foregroundColor(Color("Light"))
+//            .blur(radius: 30, opaque: false)
+//            .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
+//            .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 9)
         
         HStack(spacing: 0) {
             
@@ -33,12 +35,13 @@ struct CustomTabBar: View {
         }
         .padding()
         .background(
-            Color.white
+            Color("LightPink")
                 .clipShape(TabCurve(tabPoint: getCurvePoint() - 15))
         )
+//        .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 9)
         .overlay(
             Circle()
-                .fill(Color.white)
+                .fill(Color("MediumDark"))
                 .frame(width: 10, height: 10)
                 .offset(x: getCurvePoint() - 20)
                 
@@ -99,7 +102,7 @@ struct TabBarButton: View {
                     
                     Image(systemName: "\(image)\(selectedTab == image ? ".fill" : "")")
                         .font(.system(size: 25, weight: .semibold))
-                        .foregroundColor(Color("TabSelected"))
+                        .foregroundColor(Color("MediumDark"))
                     
                         .offset(y: selectedTab == image ? -10 : 0)
                 })

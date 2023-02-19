@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Diagnosis: View {
     @State private var messageText = ""
-    @State var messages: [String] = ["Welcome to Chat Bot 2.0!"]
+    @State var messages: [String] = ["Questions on what to do in an emergency? I'll do my best to try and help."]
     
     var body: some View {
         VStack {

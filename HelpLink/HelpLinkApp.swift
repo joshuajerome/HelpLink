@@ -17,8 +17,8 @@ struct HelpLinkApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Firebase_Auth()
-//            Home()
+//            Firebase_Auth()
+            Home()
         }
     }
 }

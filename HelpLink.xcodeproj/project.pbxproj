@@ -14,6 +14,7 @@
 		8876485F29A19280005FE50A /* Diagnosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876485E29A19280005FE50A /* Diagnosis.swift */; };
 		8876486129A1928C005FE50A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876486029A1928C005FE50A /* Main.swift */; };
 		8876486329A1D050005FE50A /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876486229A1D050005FE50A /* BotResponse.swift */; };
+		8876486629A21C14005FE50A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876486529A21C14005FE50A /* Card.swift */; };
 		88B1582329A16BA8009D993A /* HelpLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1582229A16BA8009D993A /* HelpLinkApp.swift */; };
 		88B1582729A16BAA009D993A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B1582629A16BAA009D993A /* Assets.xcassets */; };
 		88B1582A29A16BAA009D993A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B1582929A16BAA009D993A /* Preview Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		8876485E29A19280005FE50A /* Diagnosis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnosis.swift; sourceTree = "<group>"; };
 		8876486029A1928C005FE50A /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		8876486229A1D050005FE50A /* BotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotResponse.swift; sourceTree = "<group>"; };
+		8876486529A21C14005FE50A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		88B1581F29A16BA8009D993A /* HelpLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B1582229A16BA8009D993A /* HelpLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpLinkApp.swift; sourceTree = "<group>"; };
 		88B1582629A16BAA009D993A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		8876486429A21BFE005FE50A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8876486529A21C14005FE50A /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		88B1581629A16BA8009D993A = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		88B1582129A16BA8009D993A /* HelpLink */ = {
 			isa = PBXGroup;
 			children = (
+				8876486429A21BFE005FE50A /* Model */,
 				88B1583029A16D80009D993A /* View */,
 				88B1582229A16BA8009D993A /* HelpLinkApp.swift */,
 				88B1582629A16BAA009D993A /* Assets.xcassets */,
@@ -306,6 +317,7 @@
 				8876485F29A19280005FE50A /* Diagnosis.swift in Sources */,
 				8876486329A1D050005FE50A /* BotResponse.swift in Sources */,
 				BC8154CF29A1A8580019CBE4 /* LockScreenWidget.intentdefinition in Sources */,
+				8876486629A21C14005FE50A /* Card.swift in Sources */,
 				88B1583229A16D94009D993A /* Home.swift in Sources */,
 				BC8154B829A19F8F0019CBE4 /* QRCode.swift in Sources */,
 				8876486129A1928C005FE50A /* Main.swift in Sources */,

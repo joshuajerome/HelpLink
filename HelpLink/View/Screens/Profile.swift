@@ -14,13 +14,13 @@ struct Profile: View {
     var body: some View {
         
         ZStack {
-            Color("TabBG").ignoresSafeArea()
+            Color("Background").ignoresSafeArea()
             ScrollView {
                 VStack {
                     HStack(alignment: .top, content: {
                         Text("Profile")
                             .font(.largeTitle)
-                            .foregroundColor(Color("TextColor"))
+                            .foregroundColor(Color("Dark"))
                             .fontWeight(.bold)
                     })
                     .padding()
@@ -31,14 +31,15 @@ struct Profile: View {
                                 .fill(Color("TabBG"))
                                 .frame(width: 100, height: 3)
                             
-                            Image(systemName: "person.fill")
+                            Image("frowny")
                                 .resizable()
+                                .scaledToFill()
+                                .clipShape(Circle())
                                 .frame(width: 100, height: 100)
                                 .padding(EdgeInsets(top: 6, leading: 8, bottom: 4, trailing: 8))
-                                .background(Color("TabSelected"))
-                                .cornerRadius(10)
-                                .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
-                                .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
+                                
+//                                .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
+//                                .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
                         }
                         
                         VStack(alignment: .leading, spacing: 12) {
@@ -46,10 +47,10 @@ struct Profile: View {
                             Text("Suvass Ravala")
                                 .font(.title)
                                 .fontWeight(.medium)
-                                .foregroundColor(Color("TextColor").opacity((0.8)))
+                                .foregroundColor(Color("Dark").opacity((0.8)))
                             
                             Text("suvassr@abcdmail")
-                                .foregroundColor(Color("TextColor").opacity((0.7)))
+                                .foregroundColor(Color("Dark").opacity((0.7)))
                                 .padding(.top, 8)
                         }
                         .padding(.leading, 20)
@@ -69,13 +70,13 @@ struct Profile: View {
                         }) {
                             
                             Text("Emergency \nContacts")
-                                .foregroundColor(self.index == 0 ? Color(uiColor: UIColor.systemTeal) : Color("TextColor"))
+                                .foregroundColor(self.index == 0 ? Color("Dark") : .gray)
                                 .padding(.vertical, 10)
                                 .padding(.horizontal)
-                                .background(self.index == 0 ? Color("TabSelected") : Color.clear)
-                                .cornerRadius(10)
+                                .background(self.index == 0 ? Color.white : Color.clear)
+                                .cornerRadius(35)
                         }
-                        .padding(.leading, -40)
+                        .padding(.leading, -40.0)
                         
                         Spacer(minLength: 0)
                         
@@ -86,11 +87,11 @@ struct Profile: View {
                         }) {
                             
                             Text("Conditions")
-                                .foregroundColor(self.index == 1 ? Color(uiColor: UIColor.systemTeal) : Color("TextColor"))
+                                .foregroundColor(self.index == 1 ? Color("Dark") : .gray)
                                 .padding(.vertical, 10)
                                 .padding(.horizontal)
-                                .background(self.index == 1 ? Color("TabSelected") : Color.clear)
-                                .cornerRadius(10)
+                                .background(self.index == 1 ? Color.white : Color.clear)
+                                .cornerRadius(35)
                         }
                         .padding(.trailing, -40)
                         
@@ -98,11 +99,11 @@ struct Profile: View {
                     }
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
-                    .background(Color("TabBG"))
-                    .cornerRadius(8)
+                    .background(Color("Light"))
+                    .cornerRadius(40)
                     .frame(width: 290)
-                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
-                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
+//                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: -8, y: -8)
+//                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: 8, y: 8)
                     .padding(.horizontal)
                     .padding(.top, 25)
                     
@@ -132,7 +133,7 @@ struct Conditions: View {
             HStack(spacing: 20) {
                 
                 VStack(spacing: 12) {
-                    Image(systemName: "waveform.path.ecg.rectangle.fill")
+                    Image(systemName: "waveform.path.ecg.rectangle")
                         .resizable()
                         .frame(width: 80, height: 80)
                     
@@ -141,7 +142,7 @@ struct Conditions: View {
                         .padding(.top, 10)
                     
                     Text("This is what you should do if I have a seizure. Specific Instructions go here")
-                        .foregroundColor(.blue)
+                        .foregroundColor(.gray)
                         .padding(.horizontal, 20)
                     Text("Minor Severity")
                         .font(.caption)
@@ -149,10 +150,10 @@ struct Conditions: View {
                 }
                 .padding(.vertical)
                 .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                .background(Color("TextColor"))
-                .cornerRadius(15)
-                .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
-                .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
+                .background(Color("LightPink"))
+                .cornerRadius(35)
+//                .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
+//                .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
                 .frame(height: 350)
                 
                 VStack(spacing: 12) {
@@ -165,7 +166,7 @@ struct Conditions: View {
                         .padding(.top, 10)
                     
                     Text("This is what you should do if I get severe allergies. Further directions here.")
-                        .foregroundColor(.blue)
+                        .foregroundColor(.gray)
                         .padding(.horizontal, 20)
                     Text("High Severity")
                         .font(.caption)
@@ -173,10 +174,10 @@ struct Conditions: View {
                 }
                 .padding(.vertical)
                 .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-                .background(Color("TextColor"))
-                .cornerRadius(15)
-                .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
-                .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
+                .background(Color("LightPink"))
+                .cornerRadius(35)
+//                .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
+//                .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
                 .frame(height: 350)
                 
                 
@@ -193,8 +194,10 @@ struct EmergencyContacts: View {
         HStack(spacing: 20) {
             
             VStack(spacing: 12) {
-                Image(systemName: "person.circle.fill")
+                Image("woman")
                     .resizable()
+                    .scaledToFill()
+                    .clipShape(Circle())
                     .frame(width: 80, height: 80)
                 
                 Text("Mom")
@@ -202,21 +205,23 @@ struct EmergencyContacts: View {
                     .padding(.top, 10)
                 
                 Text("408-578-9834")
-                    .foregroundColor(.blue)
-                Text("1 Year")
+                    .foregroundColor(Color("Dark"))
+                Text("Primary")
                     .font(.caption)
                     .foregroundColor(.gray)
             }
             .padding(.vertical)
             .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-            .background(Color("TextColor"))
-            .cornerRadius(15)
-            .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
-            .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
+            .background(Color("LightPink"))
+            .cornerRadius(35)
+//            .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
+//            .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
             
             VStack(spacing: 12) {
-                Image(systemName: "person.circle.fill")
+                Image("man")
                     .resizable()
+                    .scaledToFill()
+                    .clipShape(Circle())
                     .frame(width: 80, height: 80)
                 
                 Text("Dad")
@@ -224,20 +229,20 @@ struct EmergencyContacts: View {
                     .padding(.top, 10)
                 
                 Text("408-457-8753")
-                    .foregroundColor(.blue)
-                Text("1 Year")
+                    .foregroundColor(Color("Dark"))
+                Text("Secondary")
                     .font(.caption)
                     .foregroundColor(.gray)
             }
             .padding(.vertical)
             .frame(width: (UIScreen.main.bounds.width - 60) / 2)
-            .background(Color("TextColor"))
-            .cornerRadius(15)
-            .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
-            .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
+            .background(Color("LightPink"))
+            .cornerRadius(35)
+//            .shadow(color: Color.white.opacity(0.1), radius: 5, x: 8, y: 8)
+//            .shadow(color: Color.black.opacity(0.5), radius: 5, x: -8, y: -8)
             
             
         }
-        .padding(.top, 20)
+        .padding(.top, 38)
     }
 }
