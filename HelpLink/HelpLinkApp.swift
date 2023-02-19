@@ -2,7 +2,6 @@
 //  HelpLinkApp.swift
 //  HelpLink
 //
-//  Created by Soham Phadke on 2/18/23.
 //
 
 import SwiftUI
@@ -17,8 +16,7 @@ struct HelpLinkApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            Firebase_Auth()
-            Home()
+            Firebase_Auth()
         }
     }
 }

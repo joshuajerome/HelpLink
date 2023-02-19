@@ -2,7 +2,6 @@
 //  Firebase_Auth.swift
 //  HelpLink
 //
-//  Created by Soham Phadke on 2/18/23.
 //
 
 import SwiftUI
@@ -11,7 +10,17 @@ import Firebase
 struct Firebase_Auth: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var userIsLoggedIn = false
+    
     var body: some View {
+        if userIsLoggedIn {
+            Home()
+        } else {
+            content
+        }
+    }
+    
+    var content: some View {
         ZStack {
             Color("TabBG")
             
@@ -56,9 +65,9 @@ struct Firebase_Auth: View {
                     .foregroundColor(.white)
                 
                 Button {
-                    register()
+                    login()
                 } label: {
-                    Text("Sign up")
+                    Text("Sign in")
                         .bold()
                         .frame(width: 200, height: 40)
                         .background(
@@ -73,9 +82,9 @@ struct Firebase_Auth: View {
                 .offset(y: 100)
                 
                 Button {
-                    login()
+                    register()
                 } label: {
-                    Text("Already have an account? Login")
+                    Text("Don't have an account? Sign up")
                         .bold()
                         .foregroundColor(.white)
                 }
@@ -91,6 +100,8 @@ struct Firebase_Auth: View {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
                 print(error!.localizedDescription)
+            } else {
+                userIsLoggedIn.toggle()
             }
         }
     }

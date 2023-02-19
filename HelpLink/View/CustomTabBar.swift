@@ -58,11 +58,11 @@ struct CustomTabBar: View {
         } else {
             switch selectedTab {
             case "list.clipboard":
-                return tabPoints[0]
+                return tabPoints[2]
             case "house":
                 return tabPoints[1]
             default:
-                return tabPoints[2]
+                return tabPoints[0]
             }
         }
     }
