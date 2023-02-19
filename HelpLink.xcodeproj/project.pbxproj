@@ -16,7 +16,42 @@
 		88B1583229A16D94009D993A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1583129A16D94009D993A /* Home.swift */; };
 		88B1583429A1700C009D993A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1583329A1700C009D993A /* CustomTabBar.swift */; };
 		88B1583629A178EA009D993A /* TabCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1583529A178EA009D993A /* TabCurve.swift */; };
+		9958E7D829A1A9E400D85EE0 /* Firebase_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9958E7D729A1A9E400D85EE0 /* Firebase_Auth.swift */; };
+		BC8154B829A19F8F0019CBE4 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8154B729A19F8F0019CBE4 /* QRCode.swift */; };
+		BC8154C029A1A8550019CBE4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8154BF29A1A8550019CBE4 /* WidgetKit.framework */; };
+		BC8154C229A1A8550019CBE4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8154C129A1A8550019CBE4 /* SwiftUI.framework */; };
+		BC8154C529A1A8550019CBE4 /* LockScreenWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8154C429A1A8550019CBE4 /* LockScreenWidgetBundle.swift */; };
+		BC8154C729A1A8560019CBE4 /* LockScreenWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8154C629A1A8560019CBE4 /* LockScreenWidgetLiveActivity.swift */; };
+		BC8154C929A1A8560019CBE4 /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8154C829A1A8560019CBE4 /* LockScreenWidget.swift */; };
+		BC8154CC29A1A8580019CBE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8154CB29A1A8580019CBE4 /* Assets.xcassets */; };
+		BC8154CE29A1A8580019CBE4 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC8154CA29A1A8560019CBE4 /* LockScreenWidget.intentdefinition */; };
+		BC8154CF29A1A8580019CBE4 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC8154CA29A1A8560019CBE4 /* LockScreenWidget.intentdefinition */; };
+		BC8154D229A1A8580019CBE4 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BC8154BD29A1A8550019CBE4 /* LockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC8154D029A1A8580019CBE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88B1581729A16BA8009D993A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8154BC29A1A8550019CBE4;
+			remoteInfo = LockScreenWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC8154D629A1A8580019CBE4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC8154D229A1A8580019CBE4 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8876485C29A1926B005FE50A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -29,6 +64,17 @@
 		88B1583129A16D94009D993A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		88B1583329A1700C009D993A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		88B1583529A178EA009D993A /* TabCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCurve.swift; sourceTree = "<group>"; };
+		9958E7D729A1A9E400D85EE0 /* Firebase_Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Auth.swift; sourceTree = "<group>"; };
+		BC8154B729A19F8F0019CBE4 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		BC8154BD29A1A8550019CBE4 /* LockScreenWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LockScreenWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8154BF29A1A8550019CBE4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BC8154C129A1A8550019CBE4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BC8154C429A1A8550019CBE4 /* LockScreenWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidgetBundle.swift; sourceTree = "<group>"; };
+		BC8154C629A1A8560019CBE4 /* LockScreenWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		BC8154C829A1A8560019CBE4 /* LockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget.swift; sourceTree = "<group>"; };
+		BC8154CA29A1A8560019CBE4 /* LockScreenWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LockScreenWidget.intentdefinition; sourceTree = "<group>"; };
+		BC8154CB29A1A8580019CBE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8154CD29A1A8580019CBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +82,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8154BA29A1A8550019CBE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8154C229A1A8550019CBE4 /* SwiftUI.framework in Frameworks */,
+				BC8154C029A1A8550019CBE4 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +103,8 @@
 				8876485C29A1926B005FE50A /* Profile.swift */,
 				8876485E29A19280005FE50A /* Diagnosis.swift */,
 				8876486029A1928C005FE50A /* Main.swift */,
+				BC8154B729A19F8F0019CBE4 /* QRCode.swift */,
+				9958E7D729A1A9E400D85EE0 /* Firebase_Auth.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -56,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				88B1582129A16BA8009D993A /* HelpLink */,
+				BC8154C329A1A8550019CBE4 /* LockScreenWidget */,
+				BC8154BE29A1A8550019CBE4 /* Frameworks */,
 				88B1582029A16BA8009D993A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				88B1581F29A16BA8009D993A /* HelpLink.app */,
+				BC8154BD29A1A8550019CBE4 /* LockScreenWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +158,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BC8154BE29A1A8550019CBE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC8154BF29A1A8550019CBE4 /* WidgetKit.framework */,
+				BC8154C129A1A8550019CBE4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC8154C329A1A8550019CBE4 /* LockScreenWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BC8154C429A1A8550019CBE4 /* LockScreenWidgetBundle.swift */,
+				BC8154C629A1A8560019CBE4 /* LockScreenWidgetLiveActivity.swift */,
+				BC8154C829A1A8560019CBE4 /* LockScreenWidget.swift */,
+				BC8154CA29A1A8560019CBE4 /* LockScreenWidget.intentdefinition */,
+				BC8154CB29A1A8580019CBE4 /* Assets.xcassets */,
+				BC8154CD29A1A8580019CBE4 /* Info.plist */,
+			);
+			path = LockScreenWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,15 +190,34 @@
 				88B1581B29A16BA8009D993A /* Sources */,
 				88B1581C29A16BA8009D993A /* Frameworks */,
 				88B1581D29A16BA8009D993A /* Resources */,
+				BC8154D629A1A8580019CBE4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BC8154D129A1A8580019CBE4 /* PBXTargetDependency */,
 			);
 			name = HelpLink;
 			productName = HelpLink;
 			productReference = 88B1581F29A16BA8009D993A /* HelpLink.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BC8154BC29A1A8550019CBE4 /* LockScreenWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8154D329A1A8580019CBE4 /* Build configuration list for PBXNativeTarget "LockScreenWidgetExtension" */;
+			buildPhases = (
+				BC8154B929A1A8550019CBE4 /* Sources */,
+				BC8154BA29A1A8550019CBE4 /* Frameworks */,
+				BC8154BB29A1A8550019CBE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockScreenWidgetExtension;
+			productName = LockScreenWidgetExtension;
+			productReference = BC8154BD29A1A8550019CBE4 /* LockScreenWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -129,6 +230,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					88B1581E29A16BA8009D993A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					BC8154BC29A1A8550019CBE4 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -147,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				88B1581E29A16BA8009D993A /* HelpLink */,
+				BC8154BC29A1A8550019CBE4 /* LockScreenWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +266,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC8154BB29A1A8550019CBE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8154CC29A1A8580019CBE4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -168,17 +281,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9958E7D829A1A9E400D85EE0 /* Firebase_Auth.swift in Sources */,
 				88B1583429A1700C009D993A /* CustomTabBar.swift in Sources */,
 				8876485D29A1926B005FE50A /* Profile.swift in Sources */,
 				88B1583629A178EA009D993A /* TabCurve.swift in Sources */,
 				8876485F29A19280005FE50A /* Diagnosis.swift in Sources */,
+				BC8154CF29A1A8580019CBE4 /* LockScreenWidget.intentdefinition in Sources */,
 				88B1583229A16D94009D993A /* Home.swift in Sources */,
+				BC8154B829A19F8F0019CBE4 /* QRCode.swift in Sources */,
 				8876486129A1928C005FE50A /* Main.swift in Sources */,
 				88B1582329A16BA8009D993A /* HelpLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC8154B929A1A8550019CBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8154C529A1A8550019CBE4 /* LockScreenWidgetBundle.swift in Sources */,
+				BC8154CE29A1A8580019CBE4 /* LockScreenWidget.intentdefinition in Sources */,
+				BC8154C929A1A8560019CBE4 /* LockScreenWidget.swift in Sources */,
+				BC8154C729A1A8560019CBE4 /* LockScreenWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC8154D129A1A8580019CBE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8154BC29A1A8550019CBE4 /* LockScreenWidgetExtension */;
+			targetProxy = BC8154D029A1A8580019CBE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		88B1582B29A16BAA009D993A /* Debug */ = {
@@ -298,6 +433,7 @@
 		88B1582E29A16BAA009D993A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +463,7 @@
 		88B1582F29A16BAA009D993A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +490,60 @@
 			};
 			name = Release;
 		};
+		BC8154D429A1A8580019CBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sjrsm.HelpLink.LockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8154D529A1A8580019CBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ2K368L4R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sjrsm.HelpLink.LockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +561,15 @@
 			buildConfigurations = (
 				88B1582E29A16BAA009D993A /* Debug */,
 				88B1582F29A16BAA009D993A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8154D329A1A8580019CBE4 /* Build configuration list for PBXNativeTarget "LockScreenWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8154D429A1A8580019CBE4 /* Debug */,
+				BC8154D529A1A8580019CBE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
