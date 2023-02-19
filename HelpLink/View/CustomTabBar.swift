@@ -15,6 +15,10 @@ struct CustomTabBar: View {
     
     var body: some View {
         
+        RoundedRectangle(cornerRadius: 30, style: .circular)
+            .frame(width: UIScreen.main.bounds.size.width, height: 100, alignment: .bottom)
+            .foregroundColor(Color("TabBG"))
+            .blur(radius: 30, opaque: false)
         
         HStack(spacing: 0) {
             
@@ -106,3 +110,4 @@ struct TabBarButton: View {
         .frame(height: 50)
     }
 }
+

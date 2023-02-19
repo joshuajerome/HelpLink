@@ -90,10 +90,10 @@
 		88B1583029A16D80009D993A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8876485B29A19254005FE50A /* Screens */,
 				88B1583129A16D94009D993A /* Home.swift */,
 				88B1583329A1700C009D993A /* CustomTabBar.swift */,
 				88B1583529A178EA009D993A /* TabCurve.swift */,
+				8876485B29A19254005FE50A /* Screens */,
 			);
 			path = View;
 			sourceTree = "<group>";
