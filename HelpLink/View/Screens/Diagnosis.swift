@@ -14,7 +14,7 @@ struct Diagnosis: View {
     var body: some View {
         VStack {
             HStack {
-                Text("iBot")
+                Text("HelperBot")
                     .font(.largeTitle)
                     .bold()
                 
