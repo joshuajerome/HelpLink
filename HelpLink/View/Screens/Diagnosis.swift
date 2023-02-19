@@ -14,14 +14,12 @@ struct Diagnosis: View {
     var body: some View {
         VStack {
             HStack {
-                Text("iBot")
+                Text("Diagnosis")
                     .font(.largeTitle)
+                    .foregroundColor(Color("Dark"))
                     .bold()
-                
-                Image(systemName: "bubble.left.fill")
-                    .font(.system(size: 26))
-                    .foregroundColor(Color.blue)
             }
+            .padding(.top, 14)
             
             ScrollView {
                 ForEach(messages, id: \.self) { message in
@@ -34,8 +32,8 @@ struct Diagnosis: View {
                             Spacer()
                             Text(newMessage)
                                 .padding()
-                                .foregroundColor(Color.white)
-                                .background(Color.blue.opacity(0.8))
+                                .foregroundColor(Color("Light"))
+                                .background(Color("TextRed"))
                                 .cornerRadius(10)
                                 .padding(.horizontal, 16)
                                 .padding(.bottom, 10)
@@ -57,7 +55,7 @@ struct Diagnosis: View {
                 }.rotationEffect(.degrees(180))
             }
             .rotationEffect(.degrees(180))
-            .background(Color.gray.opacity(0.1))
+            .background(Color.white)
             
             
             // Contains the Message bar
@@ -74,11 +72,13 @@ struct Diagnosis: View {
                     sendMessage(message: messageText)
                 } label: {
                     Image(systemName: "paperplane.fill")
+                        .foregroundColor(Color("LightPink"))
                 }
                 .font(.system(size: 26))
                 .padding(.horizontal, 10)
             }
-            .padding(.bottom, 150)
+            .padding(.bottom, 110)
+            .padding(.horizontal, 15)
         }
     }
     
@@ -98,6 +98,6 @@ struct Diagnosis: View {
 
 struct Diagnosis_Previews: PreviewProvider {
     static var previews: some View {
-        Diagnosis()
+        Home()
     }
 }

@@ -111,18 +111,22 @@ struct Main: View {
             ZStack(alignment: .bottomLeading) {
                 
 //                Image(card.cardImage)
+                var gradientStart = (card.cardImage == "Card2" ? Color("LightPink") : Color.blue)
+                var gradientEnd = (card.cardImage == "Card2" ? Color.red : Color("LightPink"))
                 RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .fill(LinearGradient(gradient: .init(colors: [gradientStart, gradientEnd]), startPoint: .init(x: 0.5, y: 0), endPoint: .init(x: 0.5, y: 0.6)))
                     .frame(height: 250)
                     .foregroundColor(card.cardImage == "Card1" ? .blue : .orange)
                 
                 VStack(alignment: .leading, spacing: 20) {
-                    
                     Text(card.name)
                         .fontWeight(.bold)
+                        .padding(.top)
                     
                     Text(card.email)
                         .font(.callout)
                         .fontWeight(.bold)
+                    Spacer()
                 }
                 .padding()
                 .padding(.bottom, 10)
@@ -213,18 +217,25 @@ struct DetailView: View {
     func CardView() -> some View {
         ZStack(alignment: .bottomLeading) {
             
-            Image(currentCard.cardImage)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
+            var gradientStart = (currentCard.cardImage == "Card2" ? Color("LightPink") : Color.blue)
+            var gradientEnd = (currentCard.cardImage == "Card2" ? Color.red : Color("LightPink"))
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .fill(LinearGradient(gradient: .init(colors: [gradientStart, gradientEnd]), startPoint: .init(x: 0.5, y: 0), endPoint: .init(x: 0.5, y: 0.6)))
+                .frame(height: 250)
+                .foregroundColor(currentCard.cardImage == "Card1" ? .blue : .orange)
+//            Image(currentCard.cardImage)
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
             
-            VStack(alignment: .leading, spacing: 10) {
-                
+            VStack(alignment: .leading, spacing: 20) {
                 Text(currentCard.name)
                     .fontWeight(.bold)
+                    .padding(.top)
                 
                 Text(currentCard.email)
                     .font(.callout)
                     .fontWeight(.bold)
+                Spacer()
             }
             .padding()
             .padding(.bottom, 10)

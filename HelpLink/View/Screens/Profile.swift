@@ -18,10 +18,22 @@ struct Profile: View {
             ScrollView {
                 VStack {
                     HStack(alignment: .top, content: {
+                        Spacer()
                         Text("Profile")
                             .font(.largeTitle)
                             .foregroundColor(Color("Dark"))
                             .fontWeight(.bold)
+                        
+                        Button(action: {}) {
+                            
+                            Image(systemName: "square.and.pencil")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 40)
+                                .foregroundColor(Color("LightPink"))
+                        }
+                        .padding(.leading, 100)
+                        .padding(.trailing, 10)
                     })
                     .padding()
                     
