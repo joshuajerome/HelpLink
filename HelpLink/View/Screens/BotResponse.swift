@@ -36,7 +36,7 @@ func fetch(msg: String) -> String {
         "model": "text-davinci-003",
         "prompt": msg,
         "temperature": 0.7,
-        "max_tokens": 20,
+        "max_tokens": 2048,
         "top_p": 1,
         "frequency_penalty": 0,
         "presence_penalty": 0

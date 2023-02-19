@@ -18,7 +18,7 @@ struct QRCode: View {
                 .interpolation(.none)
                 .resizable()
                 .frame(width: 150, height: 150, alignment:.center)
-            Link(destination: URL(string: "www.google.com")!, label:{
+            Link(destination: URL(string: "https://helplink.netlify.app")!, label:{
                 Text("See Website")
                     .bold()
                     .frame(width:250, height:50)
@@ -44,6 +44,6 @@ struct QRCode: View {
 
 struct QRCode_Previews: PreviewProvider {
     static var previews: some View {
-        QRCode(url: "https://celebrated-pie-cbe7d3.netlify.app")
+        QRCode(url: "https://helplink.netlify.app")
     }
 }
