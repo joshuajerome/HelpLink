@@ -2,16 +2,25 @@
 //  HelpLinkApp.swift
 //  HelpLink
 //
-//  Created by Soham Phadke on 2/18/23.
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct HelpLinkApp: App {
+    @StateObject var dataManager = DataManager()
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            Home()
+//            ListView()
+//                .environmentObject(dataManager)
+            Firebase_Auth()
+//            Home()
         }
     }
 }
