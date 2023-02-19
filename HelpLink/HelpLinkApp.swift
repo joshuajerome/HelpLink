@@ -9,7 +9,6 @@ import Firebase
 
 @main
 struct HelpLinkApp: App {
-    @StateObject var dataManager = DataManager()
     
     init() {
         FirebaseApp.configure()
@@ -17,10 +16,7 @@ struct HelpLinkApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            ListView()
-//                .environmentObject(dataManager)
             Firebase_Auth()
-//            Home()
         }
     }
 }

@@ -14,7 +14,7 @@ struct Firebase_Auth: View {
     
     var body: some View {
         if userIsLoggedIn {
-            ListView()
+            Home()
         } else {
             content
         }
@@ -65,9 +65,9 @@ struct Firebase_Auth: View {
                     .foregroundColor(.white)
                 
                 Button {
-                    register()
+                    login()
                 } label: {
-                    Text("Sign up")
+                    Text("Sign in")
                         .bold()
                         .frame(width: 200, height: 40)
                         .background(
@@ -82,9 +82,9 @@ struct Firebase_Auth: View {
                 .offset(y: 100)
                 
                 Button {
-                    login()
+                    register()
                 } label: {
-                    Text("Already have an account? Login")
+                    Text("Don't have an account? Sign up")
                         .bold()
                         .foregroundColor(.white)
                 }
@@ -92,13 +92,6 @@ struct Firebase_Auth: View {
                 .offset(y: 110)
             }
             .frame(width: 350)
-            .onAppear {
-                Auth.auth().addStateDidChangeListener { auth, user in
-                    if user != nil {
-                        userIsLoggedIn.toggle()
-                    }
-                }
-            }
         }
         .ignoresSafeArea()
     }
@@ -107,6 +100,8 @@ struct Firebase_Auth: View {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
                 print(error!.localizedDescription)
+            } else {
+                userIsLoggedIn.toggle()
             }
         }
     }

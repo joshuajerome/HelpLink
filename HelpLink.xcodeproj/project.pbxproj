@@ -10,10 +10,6 @@
 		428C9A2729A1E1170047A273 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 428C9A2629A1E1170047A273 /* FirebaseAuth */; };
 		428C9A2929A1E1170047A273 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 428C9A2829A1E1170047A273 /* FirebaseFirestore */; };
 		428C9A2B29A1EC720047A273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 428C9A2A29A1EC720047A273 /* GoogleService-Info.plist */; };
-		428C9A2D29A212A20047A273 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428C9A2C29A212A20047A273 /* ListView.swift */; };
-		428C9A2F29A212CE0047A273 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428C9A2E29A212CE0047A273 /* Dog.swift */; };
-		428C9A3329A21C300047A273 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428C9A3229A21C300047A273 /* DataManager.swift */; };
-		428C9A3529A21ED40047A273 /* NewDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428C9A3429A21ED40047A273 /* NewDogView.swift */; };
 		8876485D29A1926B005FE50A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876485C29A1926B005FE50A /* Profile.swift */; };
 		8876485F29A19280005FE50A /* Diagnosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876485E29A19280005FE50A /* Diagnosis.swift */; };
 		8876486129A1928C005FE50A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876486029A1928C005FE50A /* Main.swift */; };
@@ -63,10 +59,6 @@
 
 /* Begin PBXFileReference section */
 		428C9A2A29A1EC720047A273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		428C9A2C29A212A20047A273 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		428C9A2E29A212CE0047A273 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
-		428C9A3229A21C300047A273 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		428C9A3429A21ED40047A273 /* NewDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDogView.swift; sourceTree = "<group>"; };
 		8876485C29A1926B005FE50A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		8876485E29A19280005FE50A /* Diagnosis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnosis.swift; sourceTree = "<group>"; };
 		8876486029A1928C005FE50A /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -121,10 +113,6 @@
 				8876486029A1928C005FE50A /* Main.swift */,
 				BC8154B729A19F8F0019CBE4 /* QRCode.swift */,
 				9958E7D729A1A9E400D85EE0 /* Firebase_Auth.swift */,
-				428C9A2C29A212A20047A273 /* ListView.swift */,
-				428C9A3429A21ED40047A273 /* NewDogView.swift */,
-				428C9A3229A21C300047A273 /* DataManager.swift */,
-				428C9A2E29A212CE0047A273 /* Dog.swift */,
 				8876486229A1D050005FE50A /* BotResponse.swift */,
 			);
 			path = Screens;
@@ -314,17 +302,13 @@
 				9958E7D829A1A9E400D85EE0 /* Firebase_Auth.swift in Sources */,
 				88B1583429A1700C009D993A /* CustomTabBar.swift in Sources */,
 				8876485D29A1926B005FE50A /* Profile.swift in Sources */,
-				428C9A3329A21C300047A273 /* DataManager.swift in Sources */,
 				88B1583629A178EA009D993A /* TabCurve.swift in Sources */,
 				8876485F29A19280005FE50A /* Diagnosis.swift in Sources */,
 				8876486329A1D050005FE50A /* BotResponse.swift in Sources */,
 				BC8154CF29A1A8580019CBE4 /* LockScreenWidget.intentdefinition in Sources */,
 				88B1583229A16D94009D993A /* Home.swift in Sources */,
-				428C9A3529A21ED40047A273 /* NewDogView.swift in Sources */,
-				428C9A2D29A212A20047A273 /* ListView.swift in Sources */,
 				BC8154B829A19F8F0019CBE4 /* QRCode.swift in Sources */,
 				8876486129A1928C005FE50A /* Main.swift in Sources */,
-				428C9A2F29A212CE0047A273 /* Dog.swift in Sources */,
 				88B1582329A16BA8009D993A /* HelpLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
