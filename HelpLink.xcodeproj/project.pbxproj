@@ -16,6 +16,7 @@
 		88B1583229A16D94009D993A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1583129A16D94009D993A /* Home.swift */; };
 		88B1583429A1700C009D993A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1583329A1700C009D993A /* CustomTabBar.swift */; };
 		88B1583629A178EA009D993A /* TabCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1583529A178EA009D993A /* TabCurve.swift */; };
+		9958E7D829A1A9E400D85EE0 /* Firebase_Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9958E7D729A1A9E400D85EE0 /* Firebase_Auth.swift */; };
 		BC8154B829A19F8F0019CBE4 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8154B729A19F8F0019CBE4 /* QRCode.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		88B1583129A16D94009D993A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		88B1583329A1700C009D993A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		88B1583529A178EA009D993A /* TabCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCurve.swift; sourceTree = "<group>"; };
+		9958E7D729A1A9E400D85EE0 /* Firebase_Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Auth.swift; sourceTree = "<group>"; };
 		BC8154B729A19F8F0019CBE4 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +53,7 @@
 				8876485E29A19280005FE50A /* Diagnosis.swift */,
 				8876486029A1928C005FE50A /* Main.swift */,
 				BC8154B729A19F8F0019CBE4 /* QRCode.swift */,
+				9958E7D729A1A9E400D85EE0 /* Firebase_Auth.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9958E7D829A1A9E400D85EE0 /* Firebase_Auth.swift in Sources */,
 				88B1583429A1700C009D993A /* CustomTabBar.swift in Sources */,
 				8876485D29A1926B005FE50A /* Profile.swift in Sources */,
 				88B1583629A178EA009D993A /* TabCurve.swift in Sources */,
